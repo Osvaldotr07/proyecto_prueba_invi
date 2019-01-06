@@ -8,13 +8,24 @@
 				margin: 0;
 			}
 			img {
-				width: 100%;
-				padding:1px;
+				max-width: 100%;
+				vertical-align: top;
+
+			}
+			img#responsive {
+				display: none;
+			}
+			@media screen and (max-width: 768px){
+				img#responsive {
+					display: block;
+				}
 			}
 		</style>
 	</head>
 	<body>
+		<img src="image.png" alt="" id="responsive">
 		<img src="images/header.jpg" alt="">
 		<img src="images/hero_5.jpg" alt="">
+		<img src="images/clasica_06.jpg" alt="">
 	</body>
 </html>
